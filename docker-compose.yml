@@ -11,6 +11,7 @@ services:
       - docker-certs-ca:/certs/ca
       - docker-certs-client:/certs/client
       - docker-data:/var/lib/docker
+      - jenkins-data:/var/jenkins_home
     networks:
       - jenkins-network
 
